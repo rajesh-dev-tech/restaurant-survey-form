@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant Survey Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Restaurant Customer Survey</h1>
+        <p>Thanks for being a valuable customer. Please take a moment to complete this survey.</p>
+
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="100"><br>
+
+            <label for="date">Date of Visit:</label>
+            <input type="date" id="date" name="date">
+        </fieldset>
+
+        <fieldset>
+            <legend>Visit Details</legend>
+            <label for="visit">How did you hear about us?</label><br>
+            <select id="visit" name="visit">
+                <option value="social-media">Social Media</option>
+                <option value="friend">Friend</option>
+                <option value="walk-in">Walk-in</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label>How often do you visit us?</label><br>
+            <input type="radio" id="often1" name="often" value="first-time">
+            <label for="often1">First time</label>
+
+            <input type="radio" id="often2" name="often" value="occasionally">
+            <label for="often2">Occasionally</label>
+
+            <input type="radio" id="often3" name="often" value="regularly">
+            <label for="often3">Regularly</label>
+
+            <input type="radio" id="often4" name="often" value="frequently">
+            <label for="often4">Frequently</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Food and Beverage Quality</legend>
+            <label>Quality of food:</label><br>
+            <input type="radio" name="quality" value="1">1
+            <input type="radio" name="quality" value="2">2
+            <input type="radio" name="quality" value="3">3
+            <input type="radio" name="quality" value="4">4
+            <input type="radio" name="quality" value="5">5<br>
+
+            <label>Friendliness of staff:</label><br>
+            <input type="radio" name="friendliness" value="1">1
+            <input type="radio" name="friendliness" value="2">2
+            <input type="radio" name="friendliness" value="3">3
+            <input type="radio" name="friendliness" value="4">4
+            <input type="radio" name="friendliness" value="5">5<br>
+
+            <label>Accuracy of order:</label><br>
+            <input type="radio" name="accuracy" value="1">1
+            <input type="radio" name="accuracy" value="2">2
+            <input type="radio" name="accuracy" value="3">3
+            <input type="radio" name="accuracy" value="4">4
+            <input type="radio" name="accuracy" value="5">5<br>
+
+            <label>Cleanliness of the dining area:</label><br>
+            <input type="radio" name="cleanliness" value="1">1
+            <input type="radio" name="cleanliness" value="2">2
+            <input type="radio" name="cleanliness" value="3">3
+            <input type="radio" name="cleanliness" value="4">4
+            <input type="radio" name="cleanliness" value="5">5<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ambience & Comfort</legend>
+            <label>What did you like about the atmosphere?</label><br>
+            <input type="checkbox" id="ambience1" name="atmosphere" value="overall-ambience">
+            <label for="ambience1">Overall ambience</label>
+
+            <input type="checkbox" id="ambience2" name="atmosphere" value="music">
+            <label for="ambience2">Music</label>
+
+            <input type="checkbox" id="ambience3" name="atmosphere" value="seating-comfort">
+            <label for="ambience3">Seating comfort</label>
+
+            <input type="checkbox" id="ambience4" name="atmosphere" value="lighting">
+            <label for="ambience4">Lighting</label>
+
+            <input type="checkbox" id="ambience5" name="atmosphere" value="temperature">
+            <label for="ambience5">Temperature</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback and Questions</legend>
+            <label for="influence">Which of these influenced your experience the most?</label><br>
+            <select id="influence" name="influence">
+                <option value="food-quality">Food Quality</option>
+                <option value="service-speed">Service Speed</option>
+                <option value="price">Price</option>
+                <option value="cleanliness">Cleanliness</option>
+                <option value="ambience">Ambience</option>
+            </select><br>
+
+            <label for="enjoy-most">What did you enjoy most about your visit?</label><br>
+            <textarea id="enjoy-most" name="enjoy-most" rows="3" placeholder="Your text goes here"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Recommendation</legend>
+            <label>Would you recommend our restaurant to others?</label><br>
+            <input type="radio" id="rec1" name="recommend" value="definitely">
+            <label for="rec1">Definitely</label>
+
+            <input type="radio" id="rec2" name="recommend" value="maybe">
+            <label for="rec2">Maybe</label>
+
+            <input type="radio" id="rec3" name="recommend" value="not-sure">
+            <label for="rec3">Not sure</label><br>
+
+            <label for="suggestion">Any Suggestions?</label><br>
+            <textarea id="suggestion" name="suggestion" rows="3" placeholder="Your text goes here"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
